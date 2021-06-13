@@ -76,11 +76,10 @@ module.exports = {
       .setTitle("📬 Need help? Here are all of my commands:")
       .addFields(categories)
       .setDescription(
-        `Use \`${p}help\` followed by a command name to get more additional information on a command. For example: \`${p}help ban\`.`
+        `Use \`${p}help\` followed by a command name to get more additional information on a command. For example: \`${p}help ban\`.Join our Support Server [Here](https://discord.gg/R9r6vFCR)`
       )
       .setFooter(
-        `Requested by ${message.author.tag}
-        Join our Support Server [Here] https://discord.gg/R9r6vFCR`,
+        `Requested by ${message.author.tag}`,
         message.author.displayAvatarURL({ dynamic: true })
       )
       .setTimestamp()
