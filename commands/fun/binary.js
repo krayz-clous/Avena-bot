@@ -9,7 +9,7 @@ module.exports = {
    * @param {String[]} args
    */
   run: async (client, message, args) => {
-    if(!args) return message.channel.send('Please tell me if you want to encode or decode.')
+    if(!args[0]) return message.channel.send('Please tell me if you want to encode or decode.')
 
     const query = args.shift().toLowerCase();
     let word = args.join(" ");
