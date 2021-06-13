@@ -13,7 +13,7 @@ module.exports = {
           new MessageEmbed()
           .setTitle('Vote for Avena!')
           .addField(`Discord Bots List`, `[Click Here](https://disbotlist.xyz/bot/853225627926003732/vote)`)
-          .addField(`Void Bots`, `Coming Soon`)
+          .addField(`Void Bots`, `[Click Here](https://voidbots.net/bot/853225627926003732/vote)`)
           .setColor('RANDOM')
         )
     },

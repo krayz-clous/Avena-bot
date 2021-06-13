@@ -27,7 +27,7 @@ module.exports = {
             const CPU = percent.toFixed(2)
 
             const embed = new MessageEmbed()
-            .addField('Avena Stats:', `**<:server:853579803789361173> Total Servers** ${guilds}\n\n**<:people_hugging:> Total Users**: ${users}\n\n**<:Discord_channels:853580185354108929> Total Channels**: ${channels}\n\n**<:blurplecheck:853574368725958666> Usage**: ${usage}\n\n**<:nodejs:853579916553224202> Node Version**: ${node}\n\n**<:Discordjs:853579983121416223> Discord.js Version**: v${version1}\n\n**:Intol:853579732893564969> Cpu Usage** ${CPU}`)
+            .addField('Avena Stats:', `**<:server:853579803789361173> Total Servers** ${guilds}\n\n**:people_hugging: Total Users**: ${users}\n\n**<:Discord_channels:853580185354108929> Total Channels**: ${channels}\n\n**<:blurplecheck:853574368725958666> Usage**: ${usage}\n\n**<:nodejs:853579916553224202> Node Version**: ${node}\n\n**<:Discordjs:853579983121416223> Discord.js Version**: v${version1}\n\n**<:Intol:853579732893564969> Cpu Usage** ${CPU}`)
             .addField('**Cpu Stats**', `**CPU**: ${cpuModel}\n\n **Cores**: ${cores}`)
             .setColor('BLUE')
             .setTimestamp()

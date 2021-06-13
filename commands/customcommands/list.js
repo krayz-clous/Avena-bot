@@ -5,7 +5,7 @@ module.exports = {
     name: "cc-list",
     run: async(client, message, args) => {
         const data  = await schema.find({ Guild: message.guild.id });
-        if(!!data === false) return message.channel.send('There are no custom commands for this server.');
+        if(!data === false) return message.channel.send('There are no custom commands for this server.');
         message.channel.send(
             new MessageEmbed()
                 .setColor('BLUE')
