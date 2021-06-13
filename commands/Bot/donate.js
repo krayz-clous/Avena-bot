@@ -11,7 +11,7 @@ module.exports = {
         message.channel.send(
             new MessageEmbed()
             .setTitle("Donate!")
-            .setDescription("[Paypal](https://paypal.me/hypsterop)\nPatreon: Coming soon!")
+            .setDescription("Paypal: Comin Soon\nPatreon: Coming soon!")
             .setColor('RANDOM')
             .setTimestamp()
             .setFooter("Thank you for donating and using the bot.")

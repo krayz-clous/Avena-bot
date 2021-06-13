@@ -10,7 +10,7 @@ module.exports = {
   run: async (client, message, args) => {
     const inviteemebd = new MessageEmbed()
     .setTitle('Invite me')
-    .setDescription(`[Click here!](https://dsc.gg/aneo)`)
+    .setDescription(`[Click here!](https://discord.com/api/oauth2/authorize?client_id=853225627926003732&permissions=8&scope=bot)`)
     .setColor('RANDOM')
     message.channel.send(inviteemebd)
   }
