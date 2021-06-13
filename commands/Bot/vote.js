@@ -11,9 +11,9 @@ module.exports = {
     run: async(client, message, args) => {
         message.channel.send(
           new MessageEmbed()
-          .setTitle('Vote for Aneo!')
-          .addField(`Discord Bots List`, `[Click Here](https://discordbotlist.com/bots/aneo/upvote)`)
-          .addField(`Void Bots`, `[Click Here](https://voidbots.net/bot/811265195186978828/vote)`)
+          .setTitle('Vote for Avena!')
+          .addField(`Discord Bots List`, `[Click Here](https://disbotlist.xyz/bot/853225627926003732/vote)`)
+          .addField(`Void Bots`, ``)
           .setColor('RANDOM')
         )
     },
