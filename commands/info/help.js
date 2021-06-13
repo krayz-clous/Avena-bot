@@ -79,7 +79,8 @@ module.exports = {
         `Use \`${p}help\` followed by a command name to get more additional information on a command. For example: \`${p}help ban\`.`
       )
       .setFooter(
-        `Requested by ${message.author.tag}`,
+        `Requested by ${message.author.tag}
+        Join our Support Server [Here] https://discord.gg/R9r6vFCR`,
         message.author.displayAvatarURL({ dynamic: true })
       )
       .setTimestamp()
