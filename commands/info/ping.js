@@ -16,13 +16,13 @@ module.exports = {
         const eesfdsf = new MessageEmbed()
         .setTitle(`🏓 Pong!`)
         .addFields({
-          name: " <a:Success:821621580215877644> Message Latency",
+          name: " <a:success:853553304663228438> Message Latency",
           value: `${messagePing} ms`
         }, {
-          name: " <a:Discord:840220428025856030> API Ping",
+          name: " <a:loading:853295894481076255> API Ping",
           value: `${client.ws.ping} ms`
         }, {
-          name: "<:discordjs:838285692676735007> Shard | #0 Ping",
+          name: "<:happyrobot:853553743676571659> Shard | #0 Ping",
           value: `${shardPing}`
         })
         .setColor('RANDOM')
