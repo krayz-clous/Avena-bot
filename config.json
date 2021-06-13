@@ -7,5 +7,6 @@
     "dashboardURL": "http://localhost:1003",
     "semoji": "<:blurplecheck:853574368725958666>",
     "femoji": "❌",
-    "owners" : ["846637454945419264"]
+    "owners" : ["846637454945419264"],
+    "color": "#b30024"
 }

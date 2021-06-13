@@ -5,7 +5,7 @@ const Schema = require('../models/member-count')
 const WokCommands = require("wokcommands")
 const Schema1 = require("../models/blacklist-word");
 const {BlacklistedWords} = require("../Collection")
-const guildId = '814117890701787157'
+const guildId = '849318727006158908'
 client.on('ready', () =>{
   new WokCommands(client, {
     commandsDir: 'command',
