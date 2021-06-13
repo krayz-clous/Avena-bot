@@ -1,7 +1,8 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: 'pull-from-vc',
+  name: 'pull',
+  aliases: ["pull-voice", "pull-in", "pullin"],
   /**
    * @param {Client} client
    * @param {Message} message

@@ -28,7 +28,7 @@ module.exports = {
             mention = true;
         } else mention = false;
 
-        if(mention === true) channel.send('<@&853646234429161503>');
+        if(mention === true) channel.send('@everyone');
 
         channel.send(
             new MessageEmbed()
