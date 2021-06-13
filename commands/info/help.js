@@ -21,6 +21,7 @@ module.exports = {
       AntiAlt: "🧱",
       antiswear: "🎯",
       Audio: "🎶",
+      backup: "🔁UPDATING",
       birthday :"🎂",
       Bot :"🤖",
       Chat: "🧤",
