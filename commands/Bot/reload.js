@@ -9,7 +9,7 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(message.author.id !== "800331322089537538") return message.reply("why do u want to break me?")
+        if(message.author.id !== "846637454945419264") return message.reply("why do u want to break me?")
         if(!args[0]) return message.channel.send("Give a category")
         if(!args[1]) return message.channel.send("Give a command")
 

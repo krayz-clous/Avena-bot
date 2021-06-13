@@ -9,7 +9,7 @@ module.exports = {
    */
   run: async (client, message, args) => {
     const owner = client.users.cache.get('846637454945419264');
-    const owner2 = client.users.cache.get("846637454945419264")
+    const owner2 = client.users.cache.get("853225627926003732")
 
     const query = args.join(" ");
     if(!query) return message.reply('Please tell me the feedback')
