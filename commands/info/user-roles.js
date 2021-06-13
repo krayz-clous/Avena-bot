@@ -20,7 +20,7 @@ module.exports = {
     message.channel.send(
         new MessageEmbed()
         .setAuthor(member.user.tag, member.user.displayAvatarURL({ dynamic: true }))
-        .setDescription(`${member}'s roles <:Hype_Role:821003023835987998> ${memberRoles}`)
+        .setDescription(`${member}'s roles <:Discord_roles:853643605800386580> ${memberRoles}`)
         .setColor('BLUE')
     )
   }

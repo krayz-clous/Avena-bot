@@ -1,5 +1,6 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
 const ms = require('ms');
+const { prefix } = require("../../config.json")
 
 module.exports = {
   name: 'slowmode',

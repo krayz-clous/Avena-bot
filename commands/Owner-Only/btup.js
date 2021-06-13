@@ -8,11 +8,11 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(message.author.id !== '800331322089537538') return;
+        if(message.author.id !== '846637454945419264') return;
 
         let mention;
 
-        if(!args.length) return message.channel.send('> Usage: announce <#channel> <message> <-ping ?>');
+        if(!args.length) return message.channel.send('> Usage: update <#channel> <message> <-ping ?>');
 
         const channel = message.mentions.channels.first();
         if(!channel) return message.reply('tell me a channel!');
@@ -28,7 +28,7 @@ module.exports = {
             mention = true;
         } else mention = false;
 
-        if(mention === true) channel.send('<@&823925286424674327>');
+        if(mention === true) channel.send('<@&853646234429161503>');
 
         channel.send(
             new MessageEmbed()

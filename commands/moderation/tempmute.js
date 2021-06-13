@@ -3,6 +3,7 @@ const ms = require('ms')
 
 module.exports = {
     name : 'tempmute',
+    aliases: ['tmute'],
     /**
      * @param {Message} message
      */

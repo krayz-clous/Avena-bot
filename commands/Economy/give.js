@@ -1,8 +1,9 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
+const { prefix } = require("../../config.json")
 
 module.exports = {
     name: 'give',
-    usage: "h!give <user> <amount>",
+    usage: `${prefix}give <user> <amount>`,
     /** 
      * @param {Client} client 
      * @param {Message} message 

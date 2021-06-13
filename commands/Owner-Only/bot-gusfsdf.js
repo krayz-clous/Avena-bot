@@ -9,7 +9,7 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(!message.author.id === "800331322089537538") return;
+        if(!message.author.id === "846637454945419264") return;
 
         const guilds = client.guilds.cache
         .sort((a, b) => b.memberCount - a.memberCount)

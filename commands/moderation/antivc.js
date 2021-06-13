@@ -1,7 +1,8 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: 'antivc',
+  name: 'anti-vc',
+  aliases: ["anti-voice"],
   /**
    * @param {Client} client
    * @param {Message} message

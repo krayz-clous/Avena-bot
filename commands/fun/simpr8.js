@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const config = require("../../config.json")
 module.exports = {
     name: 'simp-rate',
-    aliases: ['simpr8'],
+    aliases: ['simp', 'howsimp'],
     /** 
      * @param {Client} client 
      * @param {Message} message 

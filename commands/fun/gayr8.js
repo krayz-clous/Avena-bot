@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const config = require("../../config.json")
 module.exports = {
     name: 'gay-rate',
-    aliases: ['gayr8'],
+    aliases: ['gay', "howgay"],
     /** 
      * @param {Client} client 
      * @param {Message} message 
@@ -16,7 +16,6 @@ module.exports = {
         .setTitle(`Gay Rate machine`)
         .setDescription(`${member.user.username} is ${gayr8}% Gay`)
         .setColor("RANDOM")
-        .setURL("https://www.youtube.com/watch?v=HtTUsOKjWyQ")
 
         message.channel.send(embed)
     }

@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const ms = require("ms")
 const config = require("../../config.json")
 module.exports = {
-    name: 'gstart',
+    name: 'gastart',
     aliases: ['start'],
     /** 
      * @param {Client} client 

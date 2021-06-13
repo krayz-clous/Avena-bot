@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed, MessageReaction } = require("discord.js")
 
 module.exports = {
   name: 'unantivc',
+  aliases: ["unanti-voice"],
   /**
    * @param {Client} client
    * @param {Message} message

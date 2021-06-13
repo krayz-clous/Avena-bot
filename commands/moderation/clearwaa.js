@@ -2,6 +2,7 @@ const db = require('../../models/warns')
 
 module.exports = {
     name : 'remove-all-warns',
+    aliases: ["del-warns", 'delete-warns', 'remove-warns'],
     run : async(client, message, args) => {
         if(!message.member.hasPermission("MANAGE_SERVER")) return;
         const user = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
