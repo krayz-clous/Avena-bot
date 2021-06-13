@@ -1,5 +1,5 @@
 module.exports = {
-    name: "backup-list",
+    name: "backup list",
     aliases: [""],
     run: async (client, message, args) => {}
 }
