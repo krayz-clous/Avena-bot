@@ -34,6 +34,6 @@ module.exports = {
         message.channel.send(data.text, {
             code: "",
         });
-    } else return message.channel.send('That isn\'t valid!')
+    } else return message.reply('That isn\'t valid!')
   },
 };
