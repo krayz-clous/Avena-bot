@@ -41,7 +41,7 @@ module.exports = {
       .addField('\u200B', '\u200B', true)
       .addField(':flag_kr: Korean (KST)', `${kst}\n(GMT+9)`, true)
       .addField(':flag_in: India (IST)', `${ist}\n(GMT+05:30)`, true)
-      .addField('<:vietnam_flag:853652806585024522> Vietnam (SAST)', `${sast}\n(GMT+7)`, true)
+      .addField(':flag_vn: Vietnam (SAST)', `${sast}\n(GMT+7)`, true)
       .addField('\u200B', '\u200B', true)
       .setColor('BLUE');
     message.channel.send(worldClock);
