@@ -11,7 +11,6 @@ const client = new Client({
 })
 require("dotenv").config()
 require('discord-reply');
-require('discord-buttons')
 module.exports = client;
 const mongoose = require('mongoose');
 
