@@ -14,7 +14,7 @@ client.on('message', async message =>{
 
     const p = await client.prefix(message)
     if(message.mentions.users.first()) {
-        if(message.content === '<@!853225627926003732>') return message.channel.send(`The prefix in ${message.guild.name} is ${p}`)
+        if(message.content === '<@!853225627926003732>') return message.channel.send(`The prefix in ${message.guild.name} is \`${p}\``)
     }
     if(message.author.bot) return;
     if(!message.content.startsWith(p)) return;
