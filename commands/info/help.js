@@ -76,7 +76,8 @@ module.exports = {
       .setTitle("📬 Need help? Here are all of my commands:")
       .addFields(categories)
       .setDescription(
-        `Use \`${p}help\` followed by a command name to get more additional information on a command. For example: \`${p}help ban\`.Join our Support Server [Here](https://discord.gg/R9r6vFCR)`
+        `Use \`${p}help\` followed by a command name to get more additional information on a command. For example: \`${p}help ban\`.\nJoin our Support Server [Here](https://discord.gg/R9r6vFCR)
+         Invite me now [Here](https://discord.com/api/oauth2/authorize?client_id=853225627926003732&permissions=8&scope=bot%20applications.commands)`
       )
       .setFooter(
         `Requested by ${message.author.tag}`,
