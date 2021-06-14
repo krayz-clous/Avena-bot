@@ -59,7 +59,7 @@ module.exports = {
 
         let name = file.name.replace(".js", "");
 
-        return `\`${name}\``;
+        return `\|\`${name}\`\|`;
       });
 
       let data = new Object();
