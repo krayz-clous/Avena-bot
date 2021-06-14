@@ -9,7 +9,7 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(message.author.id !== '800331322089537538') return;
+        if(message.author.id !== '846637454945419264') return;
         message.channel.send(`Hello, Im in ${client.guilds.cache.size} servers`)
     },
 };

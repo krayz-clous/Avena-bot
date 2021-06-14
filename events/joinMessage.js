@@ -16,8 +16,8 @@ client.on('guildCreate', (guild) => {
     channelToSend.send(
         new MessageEmbed()
         .setAuthor(guild.name, guild.iconURL({ dynamic: true }))
-        .setDescription("<a:loading:853295921211113472> Thanks you for inviting me! My prefix is `;` I will be more than happy to help out this server! And don't forget to give me permission! If you need anymore help regarding the bot join the support server! https://discord.gg/PRdKamPre7")
+        .setDescription(":white_check_mark: Thanks you for inviting me! My prefix is `;` I will be more than happy to help out this server! And don't forget to give me permission! If you need anymore help regarding the bot join the support server! [Here](https://discord.gg/PRdKamPre7)")
         .setTimestamp()
-        .setFooter("Join Our Support Server [Here](https://discord.gg/cFk7VsfkZS)")
+        .setFooter("Thanks for inviting me!")
     )
 });
