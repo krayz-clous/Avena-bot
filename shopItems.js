@@ -14,5 +14,9 @@ module.exports = [
     {
         item: "Diamond",
         price: 20000
+    },
+    {
+        item: "AK-47 Golden",
+        price: 20000
     }
 ]
