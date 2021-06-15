@@ -12,14 +12,14 @@ module.exports = {
         if(!lang) return message.reply("Pls specify the language you want to use")
         const string = args.join(" ");
         if(!string) return message.reply("Pls specify the text!")
-        if (string.length > 300) return message.channel.send("Please enter less than 300 characters");
+        if (string.length > 200) return message.channel.send("Please enter less than 200 characters");
         const voiceChannel = message.member.voice.channel;
         if(!voiceChannel) return message.reply('You must be in voice channel to use command!');
         const audioURL = await getAudioUrl(string, { 
             lang: lang,
             slow: false,
             host: "https://translate.google.com",
-            timeout: 10000,
+            timeout: 10000
         }); 
         try {
             voiceChannel.join().then(connection => {
