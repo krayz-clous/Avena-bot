@@ -1,6 +1,6 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
 const { MessageButton } = require("discord-buttons");
-const config = require("../../config.json")
+const { color } = require("../../config.json")
 
 module.exports = {
   name: 'invite',
@@ -13,7 +13,7 @@ module.exports = {
     const inviteemebd = new MessageEmbed()
     .setTitle(`Invite ${client.user.username} now!`)
     .setDescription("Want to invite me to your server? Click this button below!" + "\n" + "Have Fun!")
-    .setColor(config.color)
+    .setColor(color)
 
     const invite = new MessageButton()
         .setStyle(`url`)
