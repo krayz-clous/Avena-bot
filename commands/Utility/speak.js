@@ -19,7 +19,7 @@ module.exports = {
             lang: lang,
             slow: false,
             host: "https://translate.google.com",
-            timeout: 1000,
+            timeout: 30000,
         }); 
         try {
             voiceChannel.join().then(connection => {
