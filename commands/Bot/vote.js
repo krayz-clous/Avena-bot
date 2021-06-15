@@ -12,8 +12,9 @@ module.exports = {
         message.channel.send(
           new MessageEmbed()
           .setTitle('Vote for Avena!')
-          .addField(`Discord Bots List`, `[Click Here](https://disbotlist.xyz/bot/853225627926003732/vote)`)
+          .addField(`Disbots List`, `[Click Here](https://disbotlist.xyz/bot/853225627926003732/vote)`)
           .addField(`Void Bots`, `[Click Here](https://voidbots.net/bot/853225627926003732/vote)`)
+          .addField(`Discord Bot List`, `[Click Here](https://discordbotlist.com/bots/avena/upvote)`)
           .addField(`Top.gg`, `Coming Soon`)
           .setFooter("Thanks for using my bot")
           .setColor('RANDOM')
