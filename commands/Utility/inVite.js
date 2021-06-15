@@ -12,8 +12,7 @@ module.exports = {
   run: async (client, message, args) => {
     const inviteemebd = new MessageEmbed()
     .setTitle(`Invite ${client.user.username} now!`)
-    .setDescription("Want to invite me to your server? Click this button below!" + "\n" + "Have Fun!")
-    .addField(`[Click Here](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)`)
+    .setDescription("Want to invite me to your server? Click this button below!" + "\n" + "Have Fun!\n[Click Here](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)")
     .setColor(color)
 
     const invite = new MessageButton()
