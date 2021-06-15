@@ -104,23 +104,23 @@ module.exports = {
       .setTitle("Command Details:")
       .addField("PREFIX:", `\`${p}\``)
       .addField(
-        "COMMAND:",
+        "Command:",
         command.name ? `\`${command.name}\`` : "No name for this command."
       )
       .addField(
-        "ALIASES:",
+        "Aliases:",
         command.aliases
           ? `\`${command.aliases.join("` `")}\``
           : "No aliases for this command."
       )
       .addField(
-        "USAGE:",
+        "Usage:",
         command.usage
           ? `\`${p}${command.name} ${command.usage}\``
           : `\`${p}${command.name}\``
       )
       .addField(
-        "DESCRIPTION:",
+        "Description:",
         command.description
           ? command.description
           : "No description for this command."

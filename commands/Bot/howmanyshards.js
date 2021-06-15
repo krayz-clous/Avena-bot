@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'shards',
-    aliases: ["hms", "shard", "s"],
+    aliases: ["hms", "shard"],
     /** 
      * @param {Client} client 
      * @param {Message} message 
