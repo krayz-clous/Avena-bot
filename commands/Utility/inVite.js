@@ -1,6 +1,6 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
 const { MessageButton } = require("discord-buttons");
-const { config } = require("../../config.json")
+const config = require("../../config.json")
 
 module.exports = {
   name: 'invite',
