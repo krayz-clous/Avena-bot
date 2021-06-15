@@ -8,7 +8,7 @@ module.exports = {
     usage: "<prefix>speak <lang> <text>",
     description: "Text to speech in voice channel",
     run: async(client, message, args) => {
-        const lang = args.shift().toLowerCase();
+        const lang = args.shift();
         if(!lang) return message.reply("Pls specify the language you want to use")
         const string = args.join(" ");
         if(!string) return message.reply("Pls specify the text!")
