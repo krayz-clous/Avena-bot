@@ -15,15 +15,6 @@ require('discord-reply');
 module.exports = client;
 const mongoose = require('mongoose');
 
-fetch(`https://api.voidbots.net/bot/stats/:853225627926003732`, {
-    method: "POST",
-    headers: { 
-      Authorization: "VOID_RqfYoJJH9D7E9ygfNHOxGV07Wktk40fmJkOt7IEjLzBrJXyT",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({"server_count": 9 , "shard_count": 0 })
-  }).then(response => response.text())
-.then(console.log).catch(console.error);
 
 mongoose.connect(process.env.MONGO_BOT, {
     useUnifiedTopology : true,
