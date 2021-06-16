@@ -13,7 +13,7 @@ module.exports = {
 
         const simpr8 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
         const embed = new MessageEmbed()
-        .setTitle(`Simp Rate Machine <:Simpyy:839390967009247272>`)
+        .setTitle(`Simp Rate Machine`)
         .setDescription(`${member.user.username} is ${simpr8}% Simp`)
         .setColor("RANDOM")
         .setURL("https://www.youtube.com/watch?v=Sp9Ih-6qB18")

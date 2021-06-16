@@ -22,7 +22,7 @@ if (user.presence.activities.length === 1) status = user.presence.activities[0];
 else if (user.presence.activities.length > 1) status = user.presence.activities[1];
 
 if (user.presence.activities.length === 0 || status.name !== "Spotify" && status.type !== "LISTENING") {
-  return message.channel.send("This user is not listening to any music");
+  return message.channel.send("This user is not listening to any music <:spotify:854713970241568818>");
 }
 
 if (status !== null && status.type === "LISTENING" && status.name === "Spotify" && status.assets !== null) {
