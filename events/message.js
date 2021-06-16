@@ -12,6 +12,8 @@ const Timeout = new Collection()
 
 client.on('message', async message =>{
 
+
+
     const p = await client.prefix(message)
     if(message.mentions.users.first()) {
         if(message.content === '<@!853225627926003732>') return message.channel.send(`The prefix in ${message.guild.name} is \`${p}\``)
