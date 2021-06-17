@@ -1,5 +1,5 @@
 const { Client, Message, MessageEmbed } = require("discord.js");
-const { config } = require("../../config.json");
+const { color} = require("../../config.json");
 
 module.exports = {
   name: 'avatar',
@@ -15,7 +15,7 @@ module.exports = {
         new MessageEmbed()
         .setTitle(`${member.user.tag}'s Avatar`)
         .setImage(member.user.displayAvatarURL({ dynamic: true, size: 512 }))
-        .setColor(config.color)
+        .setColor(color)
     )
   }
 }
