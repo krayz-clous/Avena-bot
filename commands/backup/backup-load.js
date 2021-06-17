@@ -3,7 +3,7 @@ const fs = require("fs");
 const hastebins = require("hastebin-gen");
 const { prefix, color } = require("../../config.json");
 
-var backups = JSON.parse(fs.readFileSync("./database/backups.json", "utf8"));
+var backups = JSON.parse(fs.readFileSync("./data/backups.json", "utf8"));
 
 module.exports = {
   name: "backup-load",

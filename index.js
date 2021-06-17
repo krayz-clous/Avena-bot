@@ -1,9 +1,13 @@
 const {Collection, Client, Discord, MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const afk = new Collection();
+const mongo = require("./mongo.js")
 const db2 = require("quick.db")
 const alt = require("discord-anti-alt")
 const fetch = require("node-fetch")
+const { loadLanguages } = require('./data/language.js')
+const { guildSettings } = require('./models/serverSettings.js')
+const guildSchema = require('./models/Guild.js')
 const coinsSchemaa = require("./models/Economy")
 module.exports = afk;
 const client = new Client({

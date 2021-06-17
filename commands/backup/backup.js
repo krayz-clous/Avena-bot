@@ -3,7 +3,7 @@ const fs = require("fs");
 const hastebins = require("hastebin-gen");
 const { prefix, color } = require("../../config.json");
 
-var backups = JSON.parse(fs.readFileSync("./database/backups.json", "utf8"));
+var backups = JSON.parse(fs.readFileSync("./data/backups.json", "utf8"));
 
 module.exports = {
   name: "backup",
@@ -208,7 +208,7 @@ module.exports = {
 
     function save() {
       fs.writeFile(
-        "./database/backups.json",
+        "./data/backups.json",
         JSON.stringify(backups),
         (err) => {
           if (err) console.error(err);

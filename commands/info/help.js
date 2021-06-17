@@ -1,5 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const { readdirSync } = require("fs");
+const language = require('../../data/language')
+const { prefix, color } = require("../../config.json")
 
 
 module.exports = {
@@ -95,7 +97,7 @@ module.exports = {
 
     if (!command) {
       const embed = new MessageEmbed()
-        .setTitle(`Invalid command! Use \`${p}help\` for all of my commands!`)
+        .setTitle(`${language(message.guild, 'HANDLER_COMMAND_DOES_NOT_EXIST').replace("{prefix}", prefix)}`)
         .setColor("FF0000");
       return message.channel.send(embed);
     }
