@@ -3,6 +3,7 @@ const { color} = require("../../config.json");
 
 module.exports = {
   name: 'avatar',
+  aliases: ["av", "pfp"],
   /**
    * @param {Client} client
    * @param {Message} message
