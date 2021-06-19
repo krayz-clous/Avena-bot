@@ -1,4 +1,5 @@
 const discord = require('discord.js');
+const axios = require('axios');
 
 module.exports = {
 name: 'anime-quote',
@@ -16,7 +17,7 @@ run: async (client, message, args) => {
             return message.channel.send(`An error occured!`)
         }
 
-        const embed = new MessageEmbed()
+        const embed = new discord.MessageEmbed()
             .setTitle(`Random Anime Quote`)
             .setDescription(data.quote)
             .setFooter(`Anime: ${data.anime} | Character: ${data.character}`)
