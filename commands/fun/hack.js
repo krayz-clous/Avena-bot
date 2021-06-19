@@ -4,7 +4,7 @@ module.exports = {
     name: "hack",
     description: "hack a user",
     usage: "<prefix>hack <user>",
-    async execute(client, message, args) {
+    run: async (client, message, args) => {
 
         function wait(ms){
             let start = new Date().getTime();
