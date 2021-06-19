@@ -2,7 +2,6 @@ const client = require('../index');
 const { Collection } = require('discord.js');
 const blacklist = require('../models/blacklist');
 const mongoose = require('mongoose');
-const schema = require('../models/custom-commands');
 const db = require('../reconDB');
 const db2 = require('quick.db')
 const ms = require("ms")
