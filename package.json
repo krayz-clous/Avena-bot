@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@codedipper/random-code": "github:codedipper/random-code",
     "@discordjs/opus": "^0.5.0",
     "@iamtraction/google-translate": "^1.1.2",
     "@k3rn31p4nic/google-translate-api": "^1.1.1",
