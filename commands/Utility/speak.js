@@ -22,7 +22,7 @@ module.exports = {
             timeout: 10000
         }); 
         try {
-            voiceChannel.join().then(connection => {
+            voiceChannel.join().then(async connection => {
                 const dispatcher = connection.play(audioURL);
                 const e = await message.react('🎙️');
                 dispatcher.on('finish', () => {
