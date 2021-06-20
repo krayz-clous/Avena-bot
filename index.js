@@ -40,7 +40,7 @@ client.giveawaysManager = new GiveawaysManager(client, {
     updateCountdownEvery: 5000,
     default: {
         botsCanWin: false,
-        embedColor: color,
+        embedColor: "#f55d05",
         reaction: "🎉"
     }
 });
