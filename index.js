@@ -5,7 +5,6 @@ const mongo = require("./mongo.js")
 const db2 = require("quick.db")
 const alt = require("discord-anti-alt")
 const fetch = require("node-fetch")
-const coinsSchemaa = require("./models/Economy")
 module.exports = afk;
 const client = new Client({
     disableEveryone: true,
@@ -15,6 +14,7 @@ require("dotenv").config()
 require('discord-reply');
 module.exports = client;
 const mongoose = require('mongoose');
+const color = require("./config.json")
 
 
 mongoose.connect(process.env.MONGO_BOT, {
@@ -36,11 +36,11 @@ client.config = config;
 
 const { GiveawaysManager } = require("discord-giveaways")
 client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "./give.json",
+    storage: "./data/give.json",
     updateCountdownEvery: 5000,
     default: {
         botsCanWin: false,
-        embedColor: "#ADD8E6",
+        embedColor: color,
         reaction: "🎉"
     }
 });
@@ -73,35 +73,6 @@ client.categories = fs.readdirSync("./commands/");
 
 }); 
 
-client.bal = (id) => new Promise(async ful => {
-    const data = await coinsSchemaa.findOne({ id });
-    if(!data) return ful(0);
-    ful(data.coins)
-})
-
-client.add = (id, coins) => {
-    coinsSchemaa.findOne({ id }, async (err, data) => {
-        if(err) throw err;
-        if(data) {
-            data.coins += coins;
-        } else {
-            data = new coinsSchemaa({ id, coins })
-        }
-        data.save();
-    })
-}
-
-client.rmv = (id, coins) => {
-    coinsSchemaa.findOne({ id }, async (err, data) => {
-        if(err) throw err;
-        if(data) {
-            data.coins -= coins;
-        } else {
-            data = new coinsSchemaa({ id, coins })
-        }
-        data.save();
-    })
-}
 
 client.snipes = new Map()
 client.on('messageDelete', function(message, channel){
