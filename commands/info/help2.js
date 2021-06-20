@@ -49,6 +49,7 @@ module.exports = {
                 prefix: "📑",
                 utility: ":comet:",
                 reactionroles: "🎭",
+                soundboard: "💽",
                 welcomesetup: "🙌",
                 tickets: "🎫"
 
