@@ -24,8 +24,10 @@ module.exports = {
         try {
             voiceChannel.join().then(connection => {
                 const dispatcher = connection.play(audioURL);
+                const e = await message.react('🎙️');
                 dispatcher.on('finish', () => {
                     voiceChannel.leave();
+                    e.remove();
                 }) 
         })
         }
