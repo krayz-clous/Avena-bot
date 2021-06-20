@@ -1,7 +1,9 @@
 const prefixSchema = require('../../models/prefix')
 const { Message } = require('discord.js')
 module.exports = {
-    name : 'prefix',
+    name : 'setprefix',
+    aliases: ["set-prefix"],
+    description: "Set custom prefix of bot for the server",
     /**
      * @param {Message} message
      */

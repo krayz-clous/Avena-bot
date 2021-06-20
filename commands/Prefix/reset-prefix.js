@@ -5,6 +5,7 @@ const { confirmation } = require('@reconlx/discord.js')
 module.exports = {
     name : 'reset-prefix',
     aliases: ["resetp"],
+    description: "Reset prefix to default",
     run : async(client, message) => {
         if(!message.member.hasPermission("ADMINISTRATOR")) return;
         message.channel.send("Are you sure you want to reset the prefix?").then(async (msg) => {
