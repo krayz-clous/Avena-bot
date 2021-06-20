@@ -7,6 +7,8 @@ description: 'Play a sound insoundboard',
 run: async (client, message, args) => {
     const sb = args.shift();
     if(!sb) return message.channel.send("Please choose a sound!")
+    const channel = message.member.voice.channel;
+	if(!channel) return message.channel.send('Please connect to a voice channel to use soundboard');
 if(sb === 'ahshit') {
         channel.join().then(async connection => {
             const dispatcher = connection.play(path.join(__dirname + '/audio/ahshit.mp3'));
