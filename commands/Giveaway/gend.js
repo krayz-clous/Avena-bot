@@ -10,7 +10,7 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return;
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have perm to use this command");
 
         if(!args[0]) return message.reply("You need to specify the message ID!")
 

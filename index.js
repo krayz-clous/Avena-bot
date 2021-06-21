@@ -11,7 +11,8 @@ const client = new Client({
     partials: ["CHANNEL", "MESSAGE", "GUILD_MEMBER", "REACTION"],
 })
 require("dotenv").config()
-require('discord-reply');
+require('discord-reply')
+require('discord-buttons');
 module.exports = client;
 const mongoose = require('mongoose');
 const color = require("./config.json")
@@ -24,8 +25,16 @@ mongoose.connect(process.env.MONGO_BOT, {
 
 const blacklist = require('./models/blacklist')
 const prefixSchema = require('./models/prefix')
-
-
+const { GiveawaysManager } = require("discord-giveaways")
+client.giveawaysManager = new GiveawaysManager(client, {
+    storage: "./data/give.json",
+    updateCountdownEvery: 5000,
+    default: {
+        botsCanWin: false,
+        embedColor: "#ADD8E6",
+        reaction: "🎉"
+    }
+});
 const config = require('./config.json')
 const prefix = config.prefix
 const reconDB = require('./reconDB');
@@ -34,15 +43,8 @@ client.commands = new Collection();
 client.aliases = new Collection();
 client.config = config;
 
-const { GiveawaysManager } = require("discord-giveaways")
-client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "./data/give.json",
-    updateCountdownEvery: 5000,
-    default: {
-        botsCanWin: false,
-        embedColor: "#f55d05",
-        reaction: "🎉"
-    }
+client.on('clickButton', button => {
+    Nuggies.giveaways.buttonclick(client, button);
 });
 
 const blacklistedWords = new Collection();

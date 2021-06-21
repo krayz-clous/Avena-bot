@@ -3,13 +3,14 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'gareroll',
     aliases: ['reroll'],
+    description: "reroll the giveaway.",
     /** 
      * @param {Client} client 
      * @param {Message} message 
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return;
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You do not have perm to use this command");
 
         if(!args[0]) return message.reply("You need to specify the message ID!")
 

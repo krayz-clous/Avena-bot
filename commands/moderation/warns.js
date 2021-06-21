@@ -25,7 +25,7 @@ module.exports = {
                     .setColor("BLUE")
                 )
             } else {
-                message.channel.send('User has warns')
+                message.channel.send('User has 0 warns')
             }
 
         })
