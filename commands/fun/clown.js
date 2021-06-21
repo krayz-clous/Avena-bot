@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
   name: "clown",
-  async execute(client, message, args) {
+  run: async (client, message, args) => {
      const user =
       message.mentions.members.first() || message.member;
 let msg = await message.channel.send('Loading...')

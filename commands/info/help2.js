@@ -33,7 +33,7 @@ module.exports = {
             ];
 
             const emo = {
-                antialt: "🧱",
+                antisystem: "🧱",
                 antiswear: "🎯",
                 backup: "🔁UPDATING",
                 birthday :"🎂",
