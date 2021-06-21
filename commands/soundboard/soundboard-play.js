@@ -42,5 +42,27 @@ if(sb === 'ahshit') {
             }
 		});
 	})
+} else if(sb === 'oni-chan' || "onichan") {
+    channel.join().then(async connection => {
+		const dispatcher = connection.play(path.join(__dirname + '/audio/onichan.mp3'));
+		const e = await message.react('🎙️');
+		dispatcher.on('speaking', speaking => {
+			if(!speaking) {
+        channel.leave();
+        e.remove()
+            }
+		});
+	})
+} else if(sb === 'oioioi') {
+    channel.join().then(async connection => {
+		const dispatcher = connection.play(path.join(__dirname + '/audio/oioioi.mp3'));
+		const e = await message.react('🎙️');
+		dispatcher.on('speaking', speaking => {
+			if(!speaking) {
+        channel.leave();
+        e.remove()
+            }
+		});
+	})
 }
 }};
