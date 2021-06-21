@@ -11,7 +11,7 @@ run: async (client, message, args) => {
 	if(!channel) return message.channel.send('Please connect to a voice channel to use soundboard');
 if(sb === 'ahshit') {
         channel.join().then(async connection => {
-            const dispatcher = connection.play(path.join(__dirname + './audio/ahshit.mp3'));
+            const dispatcher = connection.play(path.join(__dirname + '/audio/ahshit.mp3'));
             const e = await message.react('🎙️');
             dispatcher.on('speaking', speaking => {
                 if(!speaking) {
@@ -22,7 +22,7 @@ if(sb === 'ahshit') {
         })
 } else if(sb === 'bruh') {
         channel.join().then(async connection => {
-		const dispatcher = connection.play(path.join(__dirname + './audio/bruh.mp3'));
+		const dispatcher = connection.play(path.join(__dirname + '/audio/bruh.mp3'));
 		const e = await message.react('🎙️');
 		dispatcher.on('speaking', speaking => {
 			if(!speaking) {
@@ -33,7 +33,7 @@ if(sb === 'ahshit') {
     })
 } else if(sb === 'uwu') {
     channel.join().then(async connection => {
-		const dispatcher = connection.play(path.join(__dirname + './audio/uwu.mp3'));
+		const dispatcher = connection.play(path.join(__dirname + '/audio/uwu.mp3'));
 		const e = await message.react('🎙️');
 		dispatcher.on('speaking', speaking => {
 			if(!speaking) {
