@@ -1,5 +1,5 @@
 const discord = require('discord.js');
-
+const path = require('path');
 module.exports = {
 name: 'sb-play',
 aliases: ['soundboard-play', 'sbp', 'sb-p'],
