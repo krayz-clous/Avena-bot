@@ -21,7 +21,7 @@ module.exports = {
         },
         {
             name: 'Here are the list of soundboard',
-            value: '`ahshit`, `bruh`, `oioioi`, `onichan` `uwu`',        
+            value: '`ahshit`, `ara`, `bruh`, `oioioi`, `onichan` `uwu`',        
         },)
 
         message.channel.send(help)
