@@ -74,7 +74,7 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setTitle("Help Menu:")
                 .setDescription(
-                    `\`\`\`js\nPrefix: ${prefix}\nParameters: <> = required, [] = optional\`\`\`\n[Invite me](https://dsc.gg/avena)\n\nTo check out a category, use command \`${prefix}help [category]\` For more information go to the next page by reacting!\n\n__**Categories**__`
+                    `[Support Server](https://discord.gg/cFk7VsfkZS)\`\`\`js\nPrefix: ${prefix}\nParameters: <> = required, [] = optional\`\`\`\n[Invite me](https://dsc.gg/avena)\n\nTo check out a category, use command \`${prefix}help [category]\` For more information go to the next page by reacting!\n\n__**Categories**__`
                 )
                 .addFields(categories)
                 .setFooter(
