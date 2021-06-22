@@ -16,6 +16,7 @@ module.exports = {
           .addField(`Void Bots`, `[Click Here](https://voidbots.net/bot/853225627926003732/vote)`)
           .addField(`Discord Bot List`, `[Click Here](https://discordbotlist.com/bots/avena/upvote)`)
           .addField(`Top.gg`, `Coming Soon`)
+          .addField(`Support Server`, `[Click Here](https://discord.gg/cFk7VsfkZS)`)
           .setFooter("Thanks for using my bot")
           .setColor('RANDOM')
         )
