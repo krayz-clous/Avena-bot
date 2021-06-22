@@ -77,7 +77,6 @@ client.categories = fs.readdirSync("./commands/");
 }); 
 
 
-
 client.snipes = new Map()
 client.on('messageDelete', function(message, channel){
 
