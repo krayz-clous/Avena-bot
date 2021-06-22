@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('../../configs/config.json');
+const config = require('../../config.json');
 const osu = require('node-osu');
 const { MessageEmbed } = require('discord.js');
 const api = new osu.Api("85842912bd27a41e4474c36868bd9b92605c61b0" , {
