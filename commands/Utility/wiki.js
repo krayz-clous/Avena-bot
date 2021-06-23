@@ -3,13 +3,11 @@ const config = require('../../configs/config.json');
 const fetch = require('node-fetch')
 
 module.exports = {
-    config: {
         name: 'wiki',
         description: 'Shows information about query from wikipedia',
         aliases: ["wikipedia"],
         usage: 'wiki <query>',
         accessableby: "",
-    },
     run: async (client, message, args) => {
     
         const body = await fetch(
