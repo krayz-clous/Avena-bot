@@ -8,12 +8,13 @@ const ms = require("ms")
 const afk = require("../models/afk");
 const config = require('../config.json')
 const discord = require('discord.js')
+const moment = require('moment');
 
 
 const Timeout = new Collection()
 
 client.on('message', async message =>{
-
+    moment.suppressDeprecationWarnings = true;
     if(message.mentions.members.first()){
       const afklist = await afk.findOne({ userID: message.mentions.members.first().id, serverID: message.guild.id});
       if(afklist){
