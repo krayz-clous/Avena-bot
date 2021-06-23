@@ -7,7 +7,7 @@ module.exports = {
    * @param {String[]} args
    */
 
-  async execute(client , message , args) {
+  run: async (client , message , args) => {
  const user = message.mentions.users.first() || message.author;
  const avatar = user.displayAvatarURL({ dynamic: false, format: "png" })
  const img = `https://api.popcatdev.repl.co/wide?image=${avatar}`;
