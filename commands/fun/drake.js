@@ -23,6 +23,6 @@ const {
       );
       let i = await res.buffer();
       const drake = new MessageAttachment(i);
-      message.inlineReply(drake);
+      message.channel.send(drake);
     },
   };
