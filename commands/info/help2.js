@@ -47,6 +47,7 @@ module.exports = {
                 giveaway: "🎉",
                 info: "📻",
                 moderation: "🔨",
+                nsfw: "🔞",
                 prefix: "📑",
                 utility: ":comet:",
                 reactionroles: "🎭",
