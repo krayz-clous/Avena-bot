@@ -27,7 +27,7 @@ module.exports = {
         })
         .setColor('RANDOM')
 
-        resultMessage.edit(eesfdsf)
+        resultMessage.edit({ embed: eesfdsf })
 
         
       })
