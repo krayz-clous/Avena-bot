@@ -21,7 +21,7 @@ client.on('message', async message =>{
         
          await message.guild.members.fetch(afklist.userID).then(member => {
          let user_tag = member.user.tag;
-         return message.channel.send(`**${afklist.oldNickname || user_tag || member.user.username}** is currently afk: ${afklist.reason} **- ${moment(afklist.time).fromNow()}**`).catch(() => {});
+         return message.channel.send(`**${afklist.oldNickname || user_tag || member.user.username}** is currently AFK: ${afklist.reason} **- ${moment(afklist.time).fromNow()}**`).catch(() => {});
          });
       }
       }
@@ -34,7 +34,7 @@ client.on('message', async message =>{
         let nickname =  `${afklis.oldNickname}`;
         message.member.setNickname(nickname).catch(() => {});
         await afk.deleteOne({ userID: message.author.id });
-        return   message.channel.send(new discord.MessageEmbed().setColor('GREEN').setDescription(`It seems like you've come back! I have removed your afk\n\n\*\*afk reason: ${afklis.reason}\*\*`)).then(m => {
+        return   message.channel.send(new discord.MessageEmbed().setColor(config.color).setDescription(`It seems like you've come back! I have removed your afk\n\n\*\*AFK reason: ${afklis.reason}\*\*`)).then(m => {
               setTimeout(() => {
                   m.delete().catch(() => {});
               }, 10000);
