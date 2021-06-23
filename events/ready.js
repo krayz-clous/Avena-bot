@@ -6,7 +6,7 @@ const WokCommands = require("wokcommands")
 const Schema1 = require("../models/blacklist-word");
 const {BlacklistedWords} = require("../Collection")
 const fetch = require("node-fetch")
-const guildId = '849318727006158908',
+const guildId = '849318727006158908'
 const { prefix } = require("../config.json")
 client.on('ready', () =>{
   fetch(`https://api.voidbots.net/bot/stats/853225627926003732`, {
