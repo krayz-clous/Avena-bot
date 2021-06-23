@@ -12,10 +12,10 @@ module.exports = {
 
   run: async (client, message, args) => {
     if (!message.member.hasPermission("ADMINISTRATOR")) {
-      return message.channel.send(":x: | You must be an administrator of this server to load a backup!");
+      return message.channel.send(":x: | You must be an administrator of this server to load a backup! Let my role be at the highest for the command to run properly");
     }
     if (!message.guild.me.hasPermission("ADMINISTRATOR")) {
-      return message.channel.send(":x: | I must be an administrator of this server to load a backup!");
+      return message.channel.send(":x: | I must be an administrator of this server to load a backup! Let my role be at the highest for the command to run properly");
     }
     let backupID = args[0];
     if (!backupID) {
@@ -24,7 +24,7 @@ module.exports = {
     // Fetching the backup to know if it exists
     backup.fetch(backupID).then(async () => {
       // If the backup exists, request for confirmation
-      message.channel.send(`:warning: | When the backup is loaded, all the channels, roles, etc. will be replaced! Type \`${config.prefix}confirm\` to confirm!`);
+      message.channel.send(`:warning: | When the backup is loaded, all the channels, roles, etc. will be replaced! Type \`${config.prefix}confirm\` to confirm! Let my role be at the highest for the command to run properly`);
       await message.channel.awaitMessages(m => (m.author.id === message.author.id) && (m.content === `${config.prefix}confirm`), {
         max: 1,
         time: 20000,
