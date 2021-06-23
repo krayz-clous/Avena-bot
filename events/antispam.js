@@ -1,5 +1,6 @@
 const client = require('../index.js')
-const db = require("quick.db")
+const { Database } = require("quickmongo")
+const db = new Database(process.env.MONGO_BOT)
 const usersMap = new Map();
 const LIMIT = 5;
 const TIME = 7000;

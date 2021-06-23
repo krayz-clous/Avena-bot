@@ -1,5 +1,6 @@
 const discord = require('discord.js');
-const db = require("quick.db")
+const { Database } = require("quickmongo")
+const db = new Database(process.env.MONGO_BOT)
 
 module.exports = {
 name: 'anti-spam',
