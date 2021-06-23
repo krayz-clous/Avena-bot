@@ -30,9 +30,9 @@ client.on('ready', () =>{
         BlacklistedWords.set(val.Guild, val.Words)
       })
     })
-
+    console.log(`${client.user.username} ✅ OP`);
     const arrayOfStatus = [
-      `${prefix} help`,
+      `${prefix}help`,
       `in ${client.guilds.cache.size} servers`,
       `in ${client.channels.cache.size} channels`,
       `with ${client.users.cache.size} members`
@@ -40,7 +40,6 @@ client.on('ready', () =>{
     
     setInterval(() => {
       const status = arrayOfStatus[Math.floor(Math.random() * arrayOfStatus.length)];
-      console.log(`${client.user.username} ✅ OP`);
       client.user.setActivity(`${status}`, {type: "WATCHING",})
     }, 30000);
 
