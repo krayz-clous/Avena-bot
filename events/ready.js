@@ -6,7 +6,8 @@ const WokCommands = require("wokcommands")
 const Schema1 = require("../models/blacklist-word");
 const {BlacklistedWords} = require("../Collection")
 const fetch = require("node-fetch")
-const guildId = '849318727006158908'
+const guildId = '849318727006158908',
+const { prefix } = require("../config.json")
 client.on('ready', () =>{
   fetch(`https://api.voidbots.net/bot/stats/853225627926003732`, {
     method: "POST",
@@ -23,8 +24,6 @@ client.on('ready', () =>{
     showWarns: false
   })
 
-    console.log(`${client.user.username} ✅ OP`)
-
     Schema1.find()
     .then((data) => {
       data.forEach((val) => {
@@ -32,14 +31,17 @@ client.on('ready', () =>{
       })
     })
 
-    client.user.setPresence({
-      status: 'online',
-      activity: {
-          name: ";help",
-          type: 'WATCHING',    
-      }
-
+    const arrayOfStatus = [
+      `${prefix} help`,
+      `in ${client.guilds.cache.size} servers`,
+      `in ${client.channels.cache.size} channels`,
+      `with ${client.users.cache.size} members`
+    ];
     
-  })
+    setInterval(() => {
+      const status = arrayOfStatus[Math.floor(Math.random() * arrayOfStatus.length)];
+      console.log(`${client.user.username} ✅ OP`);
+      client.user.setActivity(`${status}`, {type: "WATCHING",})
+    }, 30000);
 
 });
