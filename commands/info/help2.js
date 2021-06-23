@@ -38,6 +38,7 @@ module.exports = {
                 backup: "🔁UPDATING",
                 birthday :"🎂",
                 bot: "🤖",
+                chatbot: "⌨",
                 customcommands: "🗄",
                 economy: "💰",
                 ranks: "🔰",

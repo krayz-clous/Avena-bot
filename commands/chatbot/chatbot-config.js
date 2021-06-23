@@ -14,12 +14,12 @@ module.exports = {
       .setDescription(
         `🤖 ChatBot Configuration 
         ** Usage :**
-         Type \`${config.prefix}setchatbotchannel\` - To Set a Channel 
-         Type \`${config.prefix}disablechatbotchannel\` - To Disable a Channel.
+         Type \`${config.prefix}set-chatbot\` - To Set a Channel 
+         Type \`${config.prefix}disable-chatbot\` - To Disable a Channel.
          ChatBot Channel Set - None
         ** Examples :**
-         \`${config.prefix}setchatbotchannel\` <#${message.channel.id}>
-         \`${config.prefix}disablechatbotchannel\` <#${message.channel.id}>`
+         \`${config.prefix}set-chatbot\` <#${message.channel.id}>
+         \`${config.prefix}disable-chatbot\` <#${message.channel.id}>`
       )
      .addField(
         "Support Link: ",
