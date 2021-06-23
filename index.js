@@ -12,11 +12,11 @@ const client = new Client({
 })
 require("dotenv").config()
 require('discord-reply')
-require('discord-buttons');
+require('discord-buttons')(client);
 module.exports = client;
 const mongoose = require('mongoose');
 const color = require("./config.json")
-
+const { MessageButton, MessageActionRow } = require('discord-buttons')
 
 mongoose.connect(process.env.MONGO_BOT, {
     useUnifiedTopology : true,
