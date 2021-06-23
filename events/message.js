@@ -5,11 +5,42 @@ const mongoose = require('mongoose');
 const db = require('../reconDB');
 const db2 = require('quick.db')
 const ms = require("ms")
+const afk = require("../models/afk");
+const config = require('../config.json')
+const discord = require('discord.js')
 
 
 const Timeout = new Collection()
 
 client.on('message', async message =>{
+
+    if(message.mentions.members.first()){
+      const afklist = await afk.findOne({ userID: message.mentions.members.first().id, serverID: message.guild.id});
+      if(afklist){
+        
+         await message.guild.members.fetch(afklist.userID).then(member => {
+         let user_tag = member.user.tag;
+         return message.channel.send(`**${afklist.oldNickname || user_tag || member.user.username}** is currently afk: ${afklist.reason} **- ${moment(afklist.time).fromNow()}**`).catch(() => {});
+         });
+      }
+      }
+      
+      
+      const afklis = await afk.findOne({ userID: message.author.id, serverID: message.guild.id});
+      
+      
+      if(afklis) {
+        let nickname =  `${afklis.oldNickname}`;
+        message.member.setNickname(nickname).catch(() => {});
+        await afk.deleteOne({ userID: message.author.id });
+        return   message.channel.send(new discord.MessageEmbed().setColor('GREEN').setDescription(`It seems like you've come back! I have removed your afk\n\n\*\*afk reason: ${afklis.reason}\*\*`)).then(m => {
+              setTimeout(() => {
+                  m.delete().catch(() => {});
+              }, 10000);
+            });
+      
+      };
+      
 
 
 
