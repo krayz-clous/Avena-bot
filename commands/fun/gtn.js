@@ -19,14 +19,14 @@ module.exports = {
    * @param {String[]} args
    */
   run: async (client, message, args) => {
-    if (!['easy', 'normal', 'hard', 'insane', 'ultra', 'godly'].includes(args[0].toLowerCase())) return message.lineReplyNoMention(`Give me an actual difficulty? \`easy(50), normal(100), hard(250), insane(500), ultra(1000), godly(5000)\``);
+    if (!['easy', 'normal', 'hard', 'insane', 'ultra', 'godly'].includes(args[0])) return message.lineReplyNoMention(`Give me an actual difficulty? \`easy(50), normal(100), hard(250), insane(500), ultra(1000), godly(5000)\``);
     let msg = await message.channel.send(
-      `Alright! Send a number between **1** to **${difficulties[args[0].toLowerCase()]}**. I will be checking if your answer is correct. You have 2 minutes to send ANY numbers.`
+      `Alright! Send a number between **1** to **${difficulties[args[0]]}**. I will be checking if your answer is correct. You have 2 minutes to send ANY numbers.`
     );
     let filter = (m) =>
       m.author.id === message.author.id && m.channel.id === message.channel.id;
     let collector = msg.channel.createMessageCollector(filter, { time: 120000 });
-    let rand = random.int(1, difficulties[args[0].toLowerCase()]);
+    let rand = random.int(1, difficulties[args[0]]);
     let tries = 0;
     collector.on("collect", async (msg) => {
       if (!parseInt(msg.content))
