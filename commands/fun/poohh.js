@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
 name: 'pooh',
-  async execute(client, message, args) {
+  run: async(client, message, args) => {
  const split = args.join(" ").split("/")
         const text1 = split[0];
         const text2 = split[1];
