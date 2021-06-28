@@ -15,8 +15,10 @@ const {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-      const t1 = args[0];
-      const t2 = args.slice(1).join(" ");
+      const split = args.join(" ").split("/")
+      const t1 = split[0];
+      const t2 = split[1];
+      if(!t1 || !t2) return message.reply("You need 2 sentences separated with `/` for this to work.")
       const res = await fetch(
         `https://frenchnoodles.xyz/api/endpoints/drake/?text1=${t1}&text2=${t2}`,
         {}
