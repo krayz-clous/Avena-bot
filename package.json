@@ -27,6 +27,7 @@
     "cookies": "^0.8.0",
     "covid19-api": "^1.2.1",
     "cpu-stat": "^2.0.1",
+    "decancer": "^1.0.2",
     "disco-oauth": "^5.0.1",
     "discord-anti-alt": "^1.1.0",
     "discord-backup": "^2.5.0",

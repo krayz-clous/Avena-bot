@@ -2,13 +2,15 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'ban',
+    description: "Ban a member",
+    usage: "ban <user>",
     /** 
      * @param {Client} client 
      * @param {Message} message 
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
-        if(!message.member.hasPermission('ADMINISTRATOR')) return;
+        if(!message.member.hasPermission('MANAGE_NICKNAMES')) return;
         const member = message.mentions.members.first();
         if(!member) return message.channel.send('Please mention a correct user to ban!');
 

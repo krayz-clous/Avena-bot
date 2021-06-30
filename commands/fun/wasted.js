@@ -3,6 +3,7 @@ const { Canvas } = require('canvacord')
 
 module.exports = {
   name: 'wasted',
+  
   /**
    * @param {Client} client
    * @param {Message} message
