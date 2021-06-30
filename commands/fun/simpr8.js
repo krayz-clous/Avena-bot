@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const config = require("../../config.json")
 module.exports = {
     name: 'simp-rate',
+    description: "How your simp?",
     aliases: ['simp', 'howsimp'],
     /** 
      * @param {Client} client 

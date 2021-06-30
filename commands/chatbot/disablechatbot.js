@@ -7,7 +7,7 @@ module.exports = {
         name: 'disable-chatbot',
         description: 'Disables a ChatBot Channel',
         aliases: ["disablechatbotchannel"],
-        usage: '<channel>',
+        usage: 'disable-chatbot <channel>',
     run: async (client, message, args) => {
 
         if (!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send({embed: {

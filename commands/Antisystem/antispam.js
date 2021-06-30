@@ -5,7 +5,7 @@ const db = new Database(process.env.MONGO_BOT)
 module.exports = {
 name: 'anti-spam',
 aliases: ['antispam'],
-usage: '',
+usage: 'antispam <on/off>',
 description: 'Anti-spam and mute user',
 run: async (client, message, args) => {
     if(!args[0]) return message.channel.send("Pls choose option on/off")

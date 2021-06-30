@@ -2,6 +2,8 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'emojify',
+    description: "Translate text to emoji",
+    usage: "emojify <text/number>",
     /** 
      * @param {Client} client 
      * @param {Message} message 

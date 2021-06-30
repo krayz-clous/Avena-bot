@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 module.exports = {
 name: 'pooh',
+description: "Pooh meme generator",
+usage: "pooh <text> / <text>",
   run: async(client, message, args) => {
  const split = args.join(" ").split("/")
         const text1 = split[0];

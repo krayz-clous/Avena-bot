@@ -2,6 +2,8 @@ const { Client, Message, MessageEmbed, MessageAttachment } = require('discord.js
 const { Canvas } = require("canvacord")
 module.exports = {
     name: 'trash',
+    description: "delete a user",
+    usage: "trash <user>",
     /** 
      * @param {Client} client 
      * @param {Message} message 

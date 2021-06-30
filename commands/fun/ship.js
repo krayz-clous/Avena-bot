@@ -4,6 +4,7 @@ const { MessageEmbed } = require("discord.js")
 
 module.exports = {
     name: "ship",
+    usage: "ship <user> or <user1><user2>",
  
 run: async (client, message, args) => {
  const user = message.mentions.users.first();

@@ -3,6 +3,7 @@ const moment = require("moment")
 require("moment-duration-format")
 module.exports = {
     name: 'shard-stats',
+    hide: true,
     /** 
      * @param {Client} client 
      * @param {Message} message 

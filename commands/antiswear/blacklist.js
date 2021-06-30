@@ -4,6 +4,8 @@ const Schema = require('../../models/blacklist-word');
 module.exports = {
 	name: 'blacklist-word',
 	aliases: ['blw'],
+	description: "Blacklist any words",
+	usage: "<prefix>blw <word>",
 	/**
 	 * @param {Client} client
 	 * @param {Message} message

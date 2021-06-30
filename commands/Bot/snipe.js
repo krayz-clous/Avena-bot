@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'snipe',
+    description: "Show deleted message",
     /** 
      * @param {Client} client 
      * @param {Message} message 

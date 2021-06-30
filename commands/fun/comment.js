@@ -4,6 +4,8 @@ const canvacord = require("canvacord");
 
 module.exports = {
   name: "comment",
+  description: "Youtube comment",
+  usage: "comment <text>",
   run: async(client, message, args) => {
   let yee = false
 message.channel.startTyping()

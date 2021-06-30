@@ -7,6 +7,7 @@ const config = require("../../config.json")
 module.exports = {
   name: "backup-info",
   category: "backup",
+  description: "show list of backups",
 
   run: async (client, message, args) => {
     let backupID = args[0];

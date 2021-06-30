@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "say",
+  usage: "say <text>",
   /**
    * @param {Client} client
    * @param {Message} message

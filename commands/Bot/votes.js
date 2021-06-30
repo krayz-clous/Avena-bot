@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'votes',
+    description: "Vote for me on Top.gg, etc....",
     aliases: ["v", "vo"],
     /** 
      * @param {Client} client 

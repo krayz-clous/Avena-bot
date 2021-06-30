@@ -3,6 +3,7 @@ const config = require("../../config.json")
 module.exports = {
     name: 'gay-rate',
     aliases: ['gay', "howgay"],
+    description: "Rating your gay",
     /** 
      * @param {Client} client 
      * @param {Message} message 

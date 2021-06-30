@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 module.exports = {
   name: 'wide',
+  description: "Make ur avatar wider",
+  usage: "wide <user>",
   /**
    * @param {Client} client
    * @param {Message} message

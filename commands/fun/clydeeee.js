@@ -4,6 +4,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
   name: 'clyde',
   aliases: ['clyde', 'clydebot'],
+  description: "Clyde bot..",
   guildOnly: false,
   async run(client, message, args) {
     const text = args.join(' ');

@@ -5,7 +5,7 @@ const config = require("../../config.json")
 
 module.exports = {
   name: "backup-create",
-  usage: "none",
+  usage: "backup-create",
   description: "create backup",
   category: "backup",
   aliases: ["create-backup"],

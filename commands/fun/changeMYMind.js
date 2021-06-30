@@ -3,6 +3,7 @@ const { Canvas } = require('canvacord')
 
 module.exports = {
   name: 'changemymind',
+  description: "Change-my-mind lmao",
   /**
    * @param {Client} client
    * @param {Message} message

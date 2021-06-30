@@ -3,6 +3,8 @@ const ms = require("ms")
 const config = require("../../config.json")
 module.exports = {
     name: 'gaend',
+    description: "End a giveaway",
+    usage: "gaend <messageID>",
     aliases: ['end'],
     /** 
      * @param {Client} client 

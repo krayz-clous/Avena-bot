@@ -7,7 +7,7 @@ module.exports = {
         name: 'set-chatbot',
         description: 'Sets a ChatBot Channel',
         aliases: ["setchatbotchannel"], 
-        usage: '<channel>',
+        usage: 'set-chatbot <channel>',
         accessableby: "MANAGE_GUILD",
     run: async (client, message, args) => {
     

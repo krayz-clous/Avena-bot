@@ -3,7 +3,9 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name:"uptime",
+    description: "Show uptime of bot",
     aliases: ["up"],
+    hide: true,
     /** 
      * @param {Client} client 
      * @param {Message} message 

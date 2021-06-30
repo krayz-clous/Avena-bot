@@ -9,7 +9,7 @@ module.exports = {
         name: 'facts',
         aliases:['fact'],
         description: 'make a fact',
-        usage: '<text>',
+        usage: 'fact/facts <text>',
 
     async run(client, message, args) {
       const guildDB = await Guild.findOne({

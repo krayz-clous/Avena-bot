@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const  Schema = require('../../models/birthday');
 module.exports = {
     name: 'set-birthday',
+    usage: "set-birthday <DD/MM>",
     description: 'This command helps you in setting your birthday date!',
     /** 
     * @param {Client} client 

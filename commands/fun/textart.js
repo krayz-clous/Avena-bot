@@ -3,6 +3,7 @@ const figlet = require('figlet')
 
 module.exports = {
   name: 'ascii',
+  usage: "ascii <text>",
   /**
    * @param {Client} client
    * @param {Message} message

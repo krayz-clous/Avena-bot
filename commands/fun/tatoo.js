@@ -4,7 +4,7 @@ const DIG = require('discord-image-generation');
 module.exports = {
     name: 'tatoo',
     category: 'Image',
-    usage: 'tatoo',
+    usage: 'tatoo <user>',
     description: 'tatoo **MEME**',
     run: async(client, message, args) => {
         let user = message.mentions.users.first() || message.author;

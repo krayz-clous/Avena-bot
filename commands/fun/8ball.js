@@ -2,6 +2,8 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "8ball",
+    description: "Random respone",
+    usage: "8ball <quest>",
     /** 
      * @param {Client} client 
      * @param {Message} message 

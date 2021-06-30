@@ -3,6 +3,7 @@ const { Canvas } = require('canvacord')
 
 module.exports = {
   name: 'rip',
+  description: "R.I.P someone",
   /**
    * @param {Client} client
    * @param {Message} message

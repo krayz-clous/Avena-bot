@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed } = require("discord.js");
 const config = require('../../config.json')
 module.exports = {
   name: 'feedback',
+  description: "feedback anything u want",
   /**
    * @param {Client} client
    * @param {Message} message

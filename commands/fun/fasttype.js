@@ -4,6 +4,7 @@ const txtgen = require('txtgen');
 module.exports = {
     name: 'fast-type',
     aliases: ['fast'],
+    description: "Who type faster?",
     /** 
      * @param {Client} client 
      * @param {Message} message 

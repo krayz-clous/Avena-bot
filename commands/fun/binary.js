@@ -3,6 +3,8 @@ const axios = require('axios')
 
 module.exports = {
   name: "binary",
+  description: "Convert texts and numbers to endcode/decode",
+  usage: "binary <query>",
   /**
    * @param {Client} client
    * @param {Message} message

@@ -2,6 +2,7 @@ const { Client, Message, MessageEmbed, MessageAttachment } = require('discord.js
 const { Canvas } = require('canvacord')
 module.exports = {
     name: 'facepalm',
+    description: "Your pfp in facepalm",
     /** 
      * @param {Client} client 
      * @param {Message} message 

@@ -2,6 +2,8 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'report-bug',
+    description: "Report a bug",
+    usage: "report <text>",
     aliases: ['bug'],
     run: async (client, message, args) => {
         message.reply('Please Check Your dms!');

@@ -2,7 +2,9 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'shards',
+    description: "See how many shards",
     aliases: ["hms", "shard"],
+    hide: true,
     /** 
      * @param {Client} client 
      * @param {Message} message 

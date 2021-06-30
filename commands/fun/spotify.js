@@ -3,6 +3,7 @@ const Discord = require("discord.js")
 
 module.exports = {
     name : 'spotify',
+    usage: "spotify <user>",
     aliases : ['spot' , 'sy'],
     description : 'Spotify',
     run : async(client, message, args) => {

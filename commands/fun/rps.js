@@ -2,6 +2,8 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 const Discord = require("discord.js")
 module.exports = {
     name: 'rockpaperscissors',
+	description: "Play rock-paper-scissors",
+	usage: "<prefix>rps",
     aliases: ['rps'],
     /** 
      * @param {Client} client 

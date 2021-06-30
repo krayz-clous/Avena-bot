@@ -4,6 +4,7 @@ const { Client, Message, MessageEmbed, MessageAttachment } = require('discord.js
 
 module.exports = {
     name: 'tweet',
+    usage: "tweet <text>",
     /** 
      * @param {Client} client 
      * @param {Message} message 

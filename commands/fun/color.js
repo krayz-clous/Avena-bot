@@ -4,6 +4,7 @@ const { prefix } = require("../../config.json")
 module.exports = {
     name: 'color',
     aliases: ['co'],
+    description: "See your coloe in hex code",
     usage: `${prefix}color color_name_or_hexcode`,
     /** 
      * @param {Client} client 

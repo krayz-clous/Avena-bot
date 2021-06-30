@@ -5,7 +5,7 @@ module.exports = {
 name: 'anime-quote',
 aliases: ['anime-q', 'animequote', 'animeq', 'ani-q'],
 usage: '',
-description: '',
+description: 'See some anime-quotes',
 run: async (client, message, args) => {
     const url = 'https://animechan.vercel.app/api/random';
 

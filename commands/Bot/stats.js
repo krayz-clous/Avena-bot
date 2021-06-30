@@ -7,6 +7,7 @@ let m = require('moment-duration-format'),
     const version1 = require("discord.js").version
 module.exports = {
     name: 'stats',
+    hide: true,
     /** 
      * @param {Client} client 
      * @param {Message} message 
