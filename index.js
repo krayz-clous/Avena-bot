@@ -5,6 +5,25 @@ const mongo = require("./mongo.js")
 const db2 = require("quick.db")
 const alt = require("discord-anti-alt")
 const fetch = require("node-fetch")
+const colors = require("colors");
+const Enmap = require("enmap");
+
+client.settings = new Enmap({
+    name: "settings",
+    dataDir: "./data/1"
+  });
+  client.settings2 = new Enmap({
+    name: "settings",
+    dataDir: "./data/2"
+  });
+  client.settings3 = new Enmap({
+    name: "settings",
+    dataDir: "./data/3"
+  });
+  client.jointocreatemap = new Enmap({
+    name: "settings",
+    dataDir: "./data/jointocreatemap"
+  });
 module.exports = afk;
 const client = new Client({
     disableEveryone: true,
