@@ -6,6 +6,14 @@ const db2 = require("quick.db")
 const alt = require("discord-anti-alt")
 const fetch = require("node-fetch")
 const colors = require("colors");
+module.exports = afk;
+const client = new Client({
+    disableEveryone: true,
+    partials: ["CHANNEL", "MESSAGE", "GUILD_MEMBER", "REACTION"],
+})
+require("dotenv").config()
+require('discord-reply')
+require('discord-buttons')(client);
 const Enmap = require("enmap");
 
 client.settings = new Enmap({
@@ -24,14 +32,6 @@ client.settings = new Enmap({
     name: "settings",
     dataDir: "./data/jointocreatemap"
   });
-module.exports = afk;
-const client = new Client({
-    disableEveryone: true,
-    partials: ["CHANNEL", "MESSAGE", "GUILD_MEMBER", "REACTION"],
-})
-require("dotenv").config()
-require('discord-reply')
-require('discord-buttons')(client);
 module.exports = client;
 const mongoose = require('mongoose');
 const color = require("./config.json")

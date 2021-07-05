@@ -53,7 +53,8 @@ module.exports = {
                 reactionroles: "🎭",
                 soundboard: "💽",
                 welcomesetup: "🙌",
-                tickets: "🎫"
+                tickets: "🎫",
+                speak: "🎤"
 
             }
 

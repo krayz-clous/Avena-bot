@@ -1,6 +1,6 @@
-const discord = require('discord.js');
+const Discord = require('discord.js');
 const { databasing, escapeRegex} = require("../../functions")
-const config = require("../..config.json")
+const config = require("../../config.json")
 
 module.exports = {
 name: 'setup1',
