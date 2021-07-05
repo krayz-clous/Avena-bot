@@ -13,7 +13,8 @@ const client = new Client({
 })
 require("dotenv").config()
 require('discord-reply')
-require('discord-buttons')(client);
+require('discord-buttons')
+require("./logger")(client);
 const Enmap = require("enmap");
 
 client.settings = new Enmap({
