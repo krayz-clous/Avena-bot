@@ -1,5 +1,14 @@
 const discord = require('discord.js');
 const config= require('../../config.json');
+const ee = require("../../config.json")
+const {
+  databasing,
+  escapeRegex
+} = require("../../functions")
+//import the Discord Library
+const Discord = require("discord.js");
+let cpuStat = require("cpu-stat");
+let os = require("os");
 
 module.exports = {
 name: 'unlockvc',

@@ -1,9 +1,17 @@
-const Discord = require('discord.js');
+
 const config = require("../../config.json")
+const {
+  databasing,
+  escapeRegex
+} = require("../../functions")
+//import the Discord Library
+const Discord = require("discord.js");
+let cpuStat = require("cpu-stat");
+let os = require("os");
 
 module.exports = {
 name: 'setupname',
-aliases: [''],
+aliases: ['setupname1'],
 usage: 'setupname <new-name>',
 description: 'Setup create channel name',
 run: async (client, message, args) => {

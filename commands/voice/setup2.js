@@ -1,5 +1,12 @@
 const Discord = require('discord.js');
 const config = require("../../config.json")
+const {
+  databasing,
+  escapeRegex
+} = require("../../functions")
+//import the Discord Library
+let cpuStat = require("cpu-stat");
+let os = require("os");
 
 module.exports = {
 name: 'setup2',

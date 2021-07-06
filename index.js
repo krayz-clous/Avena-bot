@@ -33,6 +33,7 @@ client.settings = new Enmap({
     name: "settings",
     dataDir: "./data/jointocreatemap"
   });
+require(`./jointocreate`)(client);
 module.exports = client;
 const mongoose = require('mongoose');
 const color = require("./config.json")

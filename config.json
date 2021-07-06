@@ -10,7 +10,9 @@
     "owners" : ["846637454945419264"],
     "color": "#f55d05",
     "alexflipnote": "cOzYZ4xBggDZq57Mdz-4JZgwwwmuH5JOfCaod8jI",
-    "footertext": "",
+    "footertext": "Avena#0498",
     "footericon": "",
-    "wrongcolor": ""
+    "wrongcolor": "#ad0011",
+    "voice_log_console": true,
+    "check_all_channels_Interval_in_seconds": 10
 }

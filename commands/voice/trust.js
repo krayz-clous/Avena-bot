@@ -1,4 +1,4 @@
-const discord = require('discord.js');
+const Discord = require('discord.js');
 const config = require('../../config.json');
 const ee = require("../../config.json")
 const {
@@ -6,17 +6,15 @@ const {
     escapeRegex
   } = require("../../functions")
   //import the Discord Library
-  const Discord = require("discord.js");
   let cpuStat = require("cpu-stat");
   let os = require("os");
 
 module.exports = {
-name: 'invitevc',
-aliases: ['invite-vc', "invite-voicechat"],
-usage: 'invotevc',
-description: 'Invites a user for your voice channel',
+name: 'trustvc',
+aliases: ['trust'],
+usage: 'trust <user>',
+description: 'Trust a user can join your own voicechannel',
 run: async (client, message, args) => {
-
     let {
         channel
       } = message.member.voice;
@@ -44,58 +42,33 @@ run: async (client, message, args) => {
         if (!args[0]) return message.reply(new Discord.MessageEmbed()
           .setColor(ee.wrongcolor)
           .setTitle(":x: Please add a User via Ping / ID!")
-          .setDescription(`Useage: \`${prefix}invitevc @User [optional Message]\``)
+          .setDescription(`Useage: \`${prefix}trustvc @User\``)
           .setFooter(ee.footertext, ee.footericon)
         )
         let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
         if (!member || member == null || member == undefined) return message.reply(new Discord.MessageEmbed()
           .setColor(ee.wrongcolor)
           .setTitle(":x: Please add a User via Ping / ID!")
-          .setDescription(`Useage: \`${prefix}invitevc @User [optional Message]\``)
+          .setDescription(`Useage: \`${prefix}trustvc @User\``)
           .setFooter(ee.footertext, ee.footericon)
         )
-        let txt = args.slice(1).join(" ");
-        try {
-          channel.createInvite().then(invite => {
-            vc.updateOverwrite(member.user.id, {
-              VIEW_CHANNEL: true,
-              CONNECT: true
-            }).then(lol => {
-              vc.updateOverwrite(message.author.id, {
-                MANAGE_CHANNELS: true,
-                VIEW_CHANNEL: true,
-                MANAGE_ROLES: true,
-                CONNECT: true
-              })
-              member.user.send(new Discord.MessageEmbed()
-                .setColor(ee.color)
-                .setTitle(`You got invited to join ${message.author.tag}'s Voice Channel`)
-                .setDescription(`[Click here](${invite.url}) to join **${channel.name}**\n\n${txt ? txt : ""}`.substr(0, 2000))
-                .setFooter(ee.footertext, ee.footericon)
-              ).catch(e => {
-                return message.reply(new Discord.MessageEmbed()
-                  .setColor(ee.wrongcolor)
-                  .setTitle(`:x: Error | Couldn't Dm \`${member.user.tag}\``)
-                  .setDescription(`\`\`\`${e.message}\`\`\``)
-                  .setFooter(ee.footertext, ee.footericon)
-                )
-              })
-            })
-            return message.reply(new Discord.MessageEmbed()
-              .setColor(ee.color)
-              .setTitle(`✅ Invited ${member.user.tag} to your Channel`)
-              .setFooter(ee.footertext, ee.footericon)
-            )
+        vc.updateOverwrite(member.user.id, {
+          VIEW_CHANNEL: true,
+          CONNECT: true
+        }).then(lol => {
+          vc.updateOverwrite(message.author.id, {
+            MANAGE_CHANNELS: true,
+            VIEW_CHANNEL: true,
+            MANAGE_ROLES: true,
+            CONNECT: true
           })
-  
-        } catch (e) {
-          return message.reply(new Discord.MessageEmbed()
-            .setColor(ee.wrongcolor)
-            .setTitle(":x: An Error occurred")
-            .setDescription(`\`\`\`${e.message}\`\`\``)
+          message.reply(new Discord.MessageEmbed()
+            .setColor(ee.color)
+            .setTitle(`✅ Trusted ${member.user.tag} to your Channel!`)
+            .setDescription("He can now join your Channel!")
             .setFooter(ee.footertext, ee.footericon)
           )
-        }
+        })
       } else {
         return message.reply(new Discord.MessageEmbed()
           .setColor(ee.wrongcolor)
@@ -103,6 +76,5 @@ run: async (client, message, args) => {
           .setFooter(ee.footertext, ee.footericon)
         )
       }
-
 },
 };

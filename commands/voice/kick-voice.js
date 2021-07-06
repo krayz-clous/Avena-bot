@@ -1,5 +1,13 @@
 const discord = require('discord.js');
 const config = require('../../config.json');
+const {
+  databasing,
+  escapeRegex
+} = require("../../functions")
+//import the Discord Library
+const Discord = require("discord.js");
+let cpuStat = require("cpu-stat");
+let os = require("os");
 
 module.exports = {
 name: 'kickvc',
@@ -35,14 +43,14 @@ run: async (client, message, args) => {
         if (!args[0]) return message.reply(new Discord.MessageEmbed()
           .setColor(config.wrongcolor)
           .setTitle(":x: Please add a User via Ping / ID!")
-          .setDescription(`Useage: \`${prefix}kick @User\``)
+          .setDescription(`Useage: \`${prefix}kickvc @User\``)
           .setFooter(config.footertext)
         )
         let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
         if (!member || member == null || member == undefined) return message.reply(new Discord.MessageEmbed()
           .setColor(config.wrongcolor)
           .setTitle(":x: Please add a User via Ping / ID!")
-          .setDescription(`Useage: \`${prefix}kick @User\``)
+          .setDescription(`Useage: \`${prefix}kickvc @User\``)
           .setFooter(config.footertext)
         )
         if (!member.voice.channel)

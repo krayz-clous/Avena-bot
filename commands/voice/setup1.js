@@ -4,7 +4,7 @@ const config = require("../../config.json")
 
 module.exports = {
 name: 'setup1',
-aliases: [''],
+aliases: ['setup'],
 usage: 'setup1',
 description: 'Create join to create channel',
 run: async (client, message, args) => {
