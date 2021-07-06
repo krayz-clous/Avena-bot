@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const Guild = require("./models/logs");
+const Guild = require("./models/log");
 const mongoose = require("mongoose");
+const client = require("./index.js")
 
 module.exports = c => {
   console.log("Loaded Logger Module");
@@ -436,7 +437,7 @@ async function send_log(c, guild, color, title, description, thumb) {
       .setTimestamp()
       .setThumbnail(thumb ? thumb : guild.iconURL({ format: "png" }))
       .setFooter(
-        guild.name,
+        guild.name + `${client.user.username}`,
         guild.iconURL({ format: "png" })
       );
     //GET THE CHANNEL
