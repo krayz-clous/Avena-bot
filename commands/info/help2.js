@@ -54,7 +54,7 @@ module.exports = {
                 soundboard: "💽",
                 welcomesetup: "🙌",
                 tickets: "🎫",
-                speak: "🎤"
+                voice: "🎤"
 
             }
 
