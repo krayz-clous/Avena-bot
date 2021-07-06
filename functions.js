@@ -6,38 +6,38 @@ module.exports = {
 }
 function databasing (guildid, client) {
     client.settings.ensure(guildid, {
-        prefix: ".",
+        prefix: ";",
         channel: "",
-        channelname: "{user}' Room",
+        channelname: "{user}'s room",
         guild: guildid,
     });
     client.settings2.ensure(guildid, {
         channel: "",
-        channelname: "{user}' Channel",
+        channelname: "{user}'s channel",
         guild: guildid,
     });
     client.settings3.ensure(guildid, {
         channel: "",
-        channelname: "{user}' Lounge",
+        channelname: "{user}'s lounge",
         guild: guildid,
     });
     }
     //Function to reset the Database
     function reset_DB(guildid, client) {
     client.settings.set(guildid, {
-        prefix: ".",
+        prefix: ";",
         channel: "",
-        channelname: "{user}' Room",
+        channelname: "{user}'s room",
         guild: guildid,
     });
     client.settings2.set(guildid, {
         channel: "",
-        channelname: "{user}' Channel",
+        channelname: "{user}'s channel",
         guild: guildid,
     });
     client.settings3.set(guildid, {
         channel: "",
-        channelname: "{user}' Lounge",
+        channelname: "{user}'s lounge",
         guild: guildid,
     });
     }
