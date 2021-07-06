@@ -437,7 +437,7 @@ async function send_log(c, guild, color, title, description, thumb) {
       .setTimestamp()
       .setThumbnail(thumb ? thumb : guild.iconURL({ format: "png" }))
       .setFooter(
-        guild.name + `Avena#0498`,
+        guild.name + `Avena#0498 `,
         guild.iconURL({ format: "png" })
       );
     //GET THE CHANNEL
