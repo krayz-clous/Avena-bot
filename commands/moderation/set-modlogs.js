@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const Guild = require("../../models/log");//require our log model
+const Guild = require("../../models/logs");//require our log model
 const mongoose = require("mongoose");
 
 module.exports = {

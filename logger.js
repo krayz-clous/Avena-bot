@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const Guild = require("./models/log");
+const Guild = require("./models/logs");
 const mongoose = require("mongoose");
 
 module.exports = c => {
@@ -436,7 +436,7 @@ async function send_log(c, guild, color, title, description, thumb) {
       .setTimestamp()
       .setThumbnail(thumb ? thumb : guild.iconURL({ format: "png" }))
       .setFooter(
-        guild.name + " | powered by: milrato.eu & Modified by ShinchanOP",
+        guild.name,
         guild.iconURL({ format: "png" })
       );
     //GET THE CHANNEL
