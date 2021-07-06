@@ -14,6 +14,7 @@ module.exports = {
         .then(m => m.delete({ timeout: 5000 }));// if the user does not have perms
 
     const channel = await message.mentions.channels.first();
+    if(!channel) return message.channel.send("You need to mention a channel you want to set")
     const guild1 = message.guild;
     let webhookid;
     let webhooktoken;
