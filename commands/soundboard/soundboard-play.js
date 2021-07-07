@@ -54,7 +54,7 @@ if(sb === 'ahshit') {
 		});
 	})
 }
- if(sb === "oioioi") {
+if(sb === "oioioi") {
     channel.join().then(async connection => {
 		const dispatcher = connection.play(path.join(__dirname + '/audio/oioioi.mp3'));
 		const e = await message.react('🎙️');
@@ -66,7 +66,7 @@ if(sb === 'ahshit') {
 		});
 	})
 }
- if(sb === "ara") {
+if(sb === "ara") {
     channel.join().then(async connection => {
 		const dispatcher = connection.play(path.join(__dirname + '/audio/araara.mp3'));
 		const e = await message.react('🎙️');
