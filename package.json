@@ -84,6 +84,7 @@
     "srod-v2": "^1.0.2",
     "superagent": "^6.1.0",
     "table": "^6.0.7",
+    "tiktok-scraper": "^1.4.33",
     "translate-google": "^1.4.3",
     "txtgen": "^2.2.8",
     "voidbots": "^2.6.0",
