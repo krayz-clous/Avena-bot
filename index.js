@@ -1,5 +1,11 @@
+
+const Sentry = require("@sentry/node"),
+util = require("util"),
+fs = require("fs"),
+readdir = util.promisify(fs.readdir),
+mongoose = require("mongoose"),
+chalk = require("chalk");
 const {Collection, Client, Discord, MessageEmbed} = require('discord.js')
-const fs = require('fs')
 const afk = new Collection();
 const mongo = require("./mongo.js")
 const db2 = require("quick.db")
@@ -35,7 +41,6 @@ client.settings = new Enmap({
   });
 require(`./jointocreate`)(client);
 module.exports = client;
-const mongoose = require('mongoose');
 const color = require("./config.json")
 const { MessageButton, MessageActionRow } = require('discord-buttons')
 
@@ -43,7 +48,23 @@ mongoose.connect(process.env.MONGO_BOT, {
     useUnifiedTopology : true,
     useNewUrlParser: true,
 }).then(console.log('Connected to mongo db'))
+const { apiKeys } = require('./config.js')
+if(apiKeys.sentryDSN){
+	try {
+		Sentry.init({ dsn: apiKeys.sentryDSN });
+	} catch (e) {
+		console.log(e);
+		console.log(chalk.yellow("Looks like your Sentry DSN key is invalid. If you do not intend to use Sentry, please remove the key from the configuration file."));
+	}
+}
+const init = async () => {
+const Avena = require("./base/Avena"),
+	client = new Avena();
 
+    const languages = require("./helpers/languages");
+	client.translations = await languages();
+}
+    init();
 const blacklist = require('./models/blacklist')
 const prefixSchema = require('./models/prefix')
 const { GiveawaysManager } = require("discord-giveaways")

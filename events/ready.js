@@ -1,3 +1,4 @@
+const chalk = require("chalk");
 const client = require('../index')
 const path = require('path')
 const ms = require('ms')
@@ -8,6 +9,30 @@ const {BlacklistedWords} = require("../Collection")
 const fetch = require("node-fetch")
 const guildId = '849318727006158908'
 const { prefix } = require("../config.json")
+const config = require("../config.js")
+
+
+module.exports = class {
+
+	constructor (client) {
+		this.client = client;
+	}
+
+	async run () {
+
+		const client = this.client;
+client.logger.log(`Loading a total of ${client.commands.size} command(s).`, "log");
+		client.logger.log(`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`, "ready");
+    const fortniteShop = require("../helpers/fortniteShop.js");
+		fortniteShop.init(client);
+
+		// Start the dashboard
+		if(client.config.dashboard.enabled){
+			client.dashboard.load(client);
+		}
+  }
+}
+
 client.on('ready', () =>{
   fetch(`https://api.voidbots.net/bot/stats/853225627926003732`, {
     method: "POST",
