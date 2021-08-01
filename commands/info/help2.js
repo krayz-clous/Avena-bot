@@ -54,7 +54,9 @@ module.exports = {
                 soundboard: "💽",
                 welcomesetup: "🙌",
                 tickets: "🎫",
-                voice: "🎤"
+                voice: "🎤",
+                webhooks: "🦉",
+                divinationtarot: "🧙‍♂️"
 
             }
 
