@@ -35,6 +35,8 @@ You can report bugs or issues by opening a issue in this repository. Alternateve
 
 [![Support Server](https://img.shields.io/discord/849318727006158908?label=Support%20Server&logo=Discord&colorB=5865F2&style=for-the-badge&logoColor=white) ](https://discord.gg/cFk7VsfkZS)
 
+<iframe src="https://discord.com/widget?id=849318727006158908&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 <h1 align = "center">CONTRIBUTORS</h1>
 
 Contributions are always welcomed, but make sure to read [Contributing.md](/CONTRIBUTING.md) first.
