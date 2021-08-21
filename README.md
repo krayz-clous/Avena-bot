@@ -33,9 +33,7 @@ To Request new features contact us on Discord using the support server.
 ## <img src = "https://cdn.discordapp.com/emojis/867093601962950666.png?v=1" width = "18"> Report Bugs
 You can report bugs or issues by opening a issue in this repository. Alternatevely you can also contact us on Discord using the support server. 
 
-[![Support Server](https://img.shields.io/discord/849318727006158908?label=Support%20Server&logo=Discord&colorB=5865F2&style=for-the-badge&logoColor=white) ](https://discord.gg/cFk7VsfkZS)
-
-<iframe src="https://discord.com/widget?id=849318727006158908&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+[![Support Server](https://img.shields.io/discord/718762019586572341?label=Support%20Server&logo=Discord&colorB=5865F2&style=for-the-badge&logoColor=white) ](https://discord.gg/cFk7VsfkZS)
 
 <h1 align = "center">CONTRIBUTORS</h1>
 
