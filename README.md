@@ -1,4 +1,4 @@
-<img src align="center" = "https://media.discordapp.net/attachments/842338829381271552/878470147382317116/avena_canary.png?width=434&height=434">
+<img src = "                              https://media.discordapp.net/attachments/842338829381271552/878470147382317116/avena_canary.png?width=434&height=434">
 <h1 align="center"> AVENA</h1>
  
  **Avena** is a Multipurpose Discord Bot with many features that include but are not limited to Moderation, Music and Soudnboard and etc. This project developed by  [**rcong#3456*](https://discord.gg/cFk7VsfkZS).<br><br>
