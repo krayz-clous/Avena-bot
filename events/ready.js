@@ -12,7 +12,7 @@ client.on('ready', () =>{
   fetch(`https://api.voidbots.net/bot/stats/853225627926003732`, {
     method: "POST",
     headers: { 
-      Authorization: "VOID_VIKtXJfDbLn9NMWuEurNLL4OZ0pZYcUBOvGnvbRkQIzp0kK7",
+      Authorization: "",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({"server_count": `${client.guilds.cache.size}`, "shard_count": 0 })
